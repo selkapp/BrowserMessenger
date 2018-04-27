@@ -1,0 +1,25 @@
+﻿@model ConnectionMappingSample.Models.LoginModel
+
+@{
+    ViewBag.Title = "Login";
+}
+
+
+
+<div class="offset3 ">
+
+
+    <h2><font color="#CC6699">Browser Messenger Kullanıcı Girişi</font></h2>
+
+    <div class="offset1 ">
+        @using (Html.BeginForm())
+        {
+
+            @Html.EditorForModel()
+            <input type="submit" class="btn" value="Giriş" />
+
+        }
+
+    </div>
+</div>
+
